@@ -1,7 +1,8 @@
 {
   "rules": {
     "no-console": 0,
-    "eol-last": 0
+    "eol-last": 0,
+    "comma-dangle": 0
   },
   "extends": [
     "mcr-codes"

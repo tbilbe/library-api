@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const app = require('./src/app');
 
-mongoose.connect(process.env.DATABASECONNECT, {}, (err) => {
+mongoose.connect(process.env.DATABASE_URL, {}, (err) => {
   if (err) {
     return console.log(`Hey we got an error dummy! ${err}`);
   }
