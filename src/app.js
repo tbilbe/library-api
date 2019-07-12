@@ -1,9 +1,10 @@
 const express = require('express');
+const userRouter = require('../src/routes/user');
 
 const app = express();
 
-app.listen(3998, () => {
-  console.log('Hello you have woken the beast!');
-});
+app.use(express.json());
+
+app.use('/users', userRouter);
 
 module.exports = app;
